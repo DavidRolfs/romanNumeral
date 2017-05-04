@@ -1,6 +1,7 @@
 var value = [[1000, "M"], [900, "CM"], [500, "D"], [400, "CD"], [100, "C"], [90, "XC"], [50, "L"], [40, "XL"], [10, "X"], [9, "IX"], [5, "V"], [4, "IV"], [1, "I"]]
 
-console.log(value.length)
+var array = [];
+
 
 function getInput(input) {
   if (input === 0) {
@@ -14,13 +15,16 @@ function getInput(input) {
   }
   else if (input >= 1) {
     for(var index = 0; index <= value.length; index ++){
-      if(input>= value[index][0]){
-        return value[index][1]
+      if(input >= value[index][0]){
+        array.push(value[index][1]);
+        input -= value[index][0]
+        getInput(input)
+        return array.join("");
       }
     }
   }
-}
 
+}
 
 
 $(document).ready(function(){
