@@ -23,7 +23,6 @@ function getInput(input) {
       }
     }
   }
-
 }
 
 
@@ -31,9 +30,10 @@ $(document).ready(function(){
   $("form#userNumber").submit(function(event) {
   event.preventDefault();
 
-
   var userInput = parseInt($("#userNumberInput").val());
   var result = getInput(userInput);
-  $("#result").text(result);
+  $("ul").append("<li>"+userInput+" equates to "+result+"</li>");
+  array = [];
+
   });
 });
