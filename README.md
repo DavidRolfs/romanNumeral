@@ -10,16 +10,16 @@ The webpage contains a form that allows the user to input a number. jQuery is us
 ### Specs
 
 input <0
-output= "NaN" x
+output= "Cant do negative numbers" 
 
 input = 0
-output = "null" x
+output = "null"
 
 input = 4000
 output = "To large"
 
 input = 1
-output = I x
+output = I
 
 input = 9
 output = IX
