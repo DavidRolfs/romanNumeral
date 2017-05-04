@@ -2,16 +2,16 @@
 
 
 input <0
-output= "NaN"
+output= "NaN" x
 
 input = 0
-output = "null"
+output = "null" x
 
 input = 4000
 output = "To large"
 
 input = 1
-output = I
+output = I x
 
 input = 9
 output = IX
